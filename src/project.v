@@ -21,6 +21,7 @@ module tt_um_addon (
   assign uo_out[0] = ui_in[0] ^ ui_in[1];
   assign uo_out[1] = ui_in[0] & ui_in[1];
   assign uo_out[7:2] = 6'b0;
+  assign uio_out = 0;
   assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
